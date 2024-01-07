@@ -76,7 +76,6 @@ body {
     color: var(--headings-color);
 }
 
-
 .subheading {
     font-size: 24px;
     font-family: 'Google Sans', sans-serif;
@@ -286,8 +285,6 @@ button.active {
     width: 1rem;
 }
 
-
-
 .authors {
     font-family: 'Google Sans', sans-serif;
     margin-top: 30px;
@@ -319,39 +316,6 @@ button.active {
     margin-left: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/************************************************************************************************/
-
 #menu {
     display: flex;
     flex-direction: column;
@@ -370,7 +334,6 @@ button.active {
     text-decoration: bold;
     margin-bottom: -30px;
 }
-
 
 #menu p {
     font-family: 'Google Sans', sans-serif;
@@ -398,12 +361,7 @@ button.active {
     /* Slightly lighter color for the text */
 }
 
-
-
-
-/************************************************************************************************/
 /* Section */
-
 .section {
     margin-top: 10px;
     padding: 15px;
@@ -413,7 +371,6 @@ button.active {
     width: 90%;
     max-width: 875px;
 }
-
 
 .section h2 {
     font-size: 25px;
@@ -451,7 +408,6 @@ button.active {
     /* Darker color for the heading */
 }
 
-
 .subsection p {
     color: var(--text-color);
     /* Slightly lighter color for the text */
@@ -479,40 +435,9 @@ button.active {
     color: var(--buttons-color);
 }
 
-
-
-
-
-
 #networkImage {
     margin-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #networkImage {
     background-color: var(--box-color);
@@ -536,7 +461,6 @@ button.active {
 }
 
 /* Citation */
-
 #citation {
     border-top: 3px solid var(--buttons-hover-color);
     border-top-style: 10px;
@@ -600,7 +524,6 @@ code {
     -moz-osx-font-smoothing: auto;
     -webkit-font-smoothing: auto;
 }
-
 
 table {
     width: 100%;

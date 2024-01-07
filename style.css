@@ -1,5 +1,5 @@
 :root {
-    --background-color: #ffffff; 
+    --background-color: #ffffff;
     --dark-buttons-color: #a396a8;
     --buttons-color: #bdadc1;
     --buttons-hover-color: #a393a7;
@@ -41,7 +41,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 100%;
     margin-bottom: 70px;
 }
@@ -82,7 +82,7 @@ body {
     font-family: 'Google Sans', sans-serif;
     color: var(--labels-color);
     margin-top: 0;
-    padding: 0px 50px; 
+    padding: 0px 50px;
 }
 
 button {
@@ -99,7 +99,7 @@ button {
     border-radius: 12px;
 }
 
-button a{
+button a {
     text-decoration: none;
 }
 
@@ -108,48 +108,59 @@ button:hover {
 }
 
 .coming-soon-button {
-    position: relative; /* Required for positioning pseudo-elements */
-  }
-  
+    position: relative;
+    /* Required for positioning pseudo-elements */
+}
+
 .coming-soon-button::after {
     content: "Coming soon";
     position: absolute;
-    top: 100%; /* Position it just below the button */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    background-color: #333; /* Background color for the tooltip */
-    color: #fff; /* Text color for the tooltip */
-    padding: 5px 10px; /* Adjust padding as needed */
-    border-radius: 4px; /* Add rounded corners */
-    opacity: 0; /* Initially hide the tooltip */
-    transition: opacity 0.2s ease-in-out; /* Add a smooth transition effect */
+    top: 100%;
+    /* Position it just below the button */
+    left: 50%;
+    /* Center horizontally */
+    transform: translateX(-50%);
+    /* Center horizontally */
+    background-color: #333;
+    /* Background color for the tooltip */
+    color: #fff;
+    /* Text color for the tooltip */
+    padding: 5px 10px;
+    /* Adjust padding as needed */
+    border-radius: 4px;
+    /* Add rounded corners */
+    opacity: 0;
+    /* Initially hide the tooltip */
+    transition: opacity 0.2s ease-in-out;
+    /* Add a smooth transition effect */
     font-size: 16px;
 }
-  
+
 .coming-soon-button:hover::after {
-    opacity: 1; /* Show the tooltip on hover */
+    opacity: 1;
+    /* Show the tooltip on hover */
 }
 
 /* Default style for the inactive state */
 button.inactive {
-    padding:  5px 5px;
+    padding: 5px 5px;
     width: 120px;
     background-color: var(--dark-buttons-color);
     color: var(--labels-color);
     border-radius: 5px;
-  }
-  
+}
+
 /* Style for the active state */
 button.active {
-    padding:  5px 5px;
+    padding: 5px 5px;
     width: 120px;
     background-color: var(--light-buttons-color);
     color: #ffffff;
     border-radius: 5px;
-    }
+}
 
 #jumpTo {
-    padding:  5px 5px;
+    padding: 5px 5px;
     width: 120px;
     background-color: var(--buttons-color);
     border-radius: 5px;
@@ -157,7 +168,7 @@ button.active {
     left: 0px;
 }
 
-#jumpTo:hover{
+#jumpTo:hover {
     background-color: var(--buttons-hover-color);
 }
 
@@ -179,10 +190,14 @@ button.active {
     padding-bottom: 30px;
     overflow: visible;
     background-color: var(--buttons-color);
-    border-top-left-radius: 5px;     /* Top left corner */
-    border-top-right-radius: 5px;    /* Top right corner */
-    border-bottom-right-radius: 5px; /* Bottom right corner */
-    border-bottom-left-radius: 5px;  /* Bottom left corner */
+    border-top-left-radius: 5px;
+    /* Top left corner */
+    border-top-right-radius: 5px;
+    /* Top right corner */
+    border-bottom-right-radius: 5px;
+    /* Bottom right corner */
+    border-bottom-left-radius: 5px;
+    /* Bottom left corner */
 }
 
 #navigation h2 {
@@ -196,9 +211,11 @@ button.active {
 
 #navigation p {
     font-family: 'Google Sans', sans-serif;
-    color: var(--buttons-hover-color); /* Slightly lighter color for the text */
-    line-height: 1.6; /* Adjusts the line height for better readability */
-    text-align: left!important;
+    color: var(--buttons-hover-color);
+    /* Slightly lighter color for the text */
+    line-height: 1.6;
+    /* Adjusts the line height for better readability */
+    text-align: left !important;
     width: 100%;
     margin-left: 60px;
     font-size: 14px;
@@ -207,13 +224,15 @@ button.active {
     margin-bottom: 0px;
 }
 
-#navigation p a{
-    color: var(--labels-color); /* Slightly lighter color for the text */
+#navigation p a {
+    color: var(--labels-color);
+    /* Slightly lighter color for the text */
     text-decoration: none;
 }
 
-#navigation p a:hover{
-    color: var(--dark-buttons-color); /* Slightly lighter color for the text */
+#navigation p a:hover {
+    color: var(--dark-buttons-color);
+    /* Slightly lighter color for the text */
 }
 
 .inline-heading {
@@ -226,13 +245,14 @@ button.active {
     margin-top: 5px;
 }
 
-.inline-heading a{
+.inline-heading a {
     color: var(--subheadings2-color);
     text-decoration: none;
 }
 
-.inline-heading a:hover{
-    color: var(--background-color); /* Slightly lighter color for the text */
+.inline-heading a:hover {
+    color: var(--background-color);
+    /* Slightly lighter color for the text */
 }
 
 
@@ -246,16 +266,17 @@ button.active {
     margin-top: 20px;
 }
 
-.inline-heading-2 a{
+.inline-heading-2 a {
     color: var(--subheadings2-color);
     text-decoration: none;
 }
 
-.inline-heading-2 a:hover{
-    color: var(--background-color); /* Slightly lighter color for the text */
+.inline-heading-2 a:hover {
+    color: var(--background-color);
+    /* Slightly lighter color for the text */
 }
 
-.icon a{
+.icon a {
     text-decoration: none;
 }
 
@@ -269,15 +290,17 @@ button.active {
 
 .authors {
     font-family: 'Google Sans', sans-serif;
-    margin-top:30px;
-    margin-bottom:-10px;
+    margin-top: 30px;
+    margin-bottom: -10px;
     color: var(--headings-color);
     font-size: 18px;
 }
 
 .authors img {
-    height: 20px; /* Adjust the size as needed */
-    vertical-align: middle; /* Aligns the icon with the text */
+    height: 20px;
+    /* Adjust the size as needed */
+    vertical-align: middle;
+    /* Aligns the icon with the text */
     margin-right: 5px;
 }
 
@@ -288,8 +311,10 @@ button.active {
 }
 
 .associations img {
-    height: 20px; /* Adjust the size as needed */
-    vertical-align: left; /* Aligns the icon with the text */
+    height: 20px;
+    /* Adjust the size as needed */
+    vertical-align: left;
+    /* Aligns the icon with the text */
     margin-right: 5px;
     margin-left: 5px;
 }
@@ -349,9 +374,11 @@ button.active {
 
 #menu p {
     font-family: 'Google Sans', sans-serif;
-    color: var(--buttons-hover-color); /* Slightly lighter color for the text */
-    line-height: 1.6; /* Adjusts the line height for better readability */
-    text-align: left!important;
+    color: var(--buttons-hover-color);
+    /* Slightly lighter color for the text */
+    line-height: 1.6;
+    /* Adjusts the line height for better readability */
+    text-align: left !important;
     width: 100%;
     margin-left: 60px;
     font-size: 15px;
@@ -360,13 +387,15 @@ button.active {
     margin-bottom: 0px; */
 }
 
-#menu p a{
-    color: var(--labels-color); /* Slightly lighter color for the text */
+#menu p a {
+    color: var(--labels-color);
+    /* Slightly lighter color for the text */
     text-decoration: none;
 }
 
-#menu p a:hover{
-    color: var(--dark-buttons-color); /* Slightly lighter color for the text */
+#menu p a:hover {
+    color: var(--dark-buttons-color);
+    /* Slightly lighter color for the text */
 }
 
 
@@ -377,8 +406,8 @@ button.active {
 
 .section {
     margin-top: 10px;
-    padding: 15px; 
-    align-items: center; 
+    padding: 15px;
+    align-items: center;
     justify-content: center;
     overflow: visible;
     width: 90%;
@@ -409,7 +438,8 @@ button.active {
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 22px;
-    color: var(--subheadings-color); /* Darker color for the heading */
+    color: var(--subheadings-color);
+    /* Darker color for the heading */
 }
 
 .subsection h3 {
@@ -417,25 +447,28 @@ button.active {
     margin-top: 30px;
     margin-bottom: 10px;
     font-size: 18px;
-    color: var(--text-color); /* Darker color for the heading */
+    color: var(--text-color);
+    /* Darker color for the heading */
 }
 
 
 .subsection p {
-    color: var(--text-color); /* Slightly lighter color for the text */
-    line-height: 1.6; /* Adjusts the line height for better readability */
-    text-align: justify!important;
+    color: var(--text-color);
+    /* Slightly lighter color for the text */
+    line-height: 1.6;
+    /* Adjusts the line height for better readability */
+    text-align: justify !important;
     width: 100%;
     margin-top: 0px;
 }
 
-.subsection a{
-    color: var(--links-color); 
+.subsection a {
+    color: var(--links-color);
     text-decoration: none;
 }
 
-.subsection a:hover{
-    color: var(--buttons-hover-color); 
+.subsection a:hover {
+    color: var(--buttons-hover-color);
     text-decoration: none;
 }
 
@@ -482,16 +515,21 @@ button.active {
 
 
 #networkImage {
-    background-color: var(--box-color); /* Darker color for the heading */
-    border-top-left-radius: 10px;     /* Top left corner */
-    border-top-right-radius: 10px;    /* Top right corner */
-    border-bottom-right-radius: 10px; /* Bottom right corner */
-    border-bottom-left-radius: 10px;  /* Bottom left corner */
+    background-color: var(--box-color);
+    /* Darker color for the heading */
+    border-top-left-radius: 10px;
+    /* Top left corner */
+    border-top-right-radius: 10px;
+    /* Top right corner */
+    border-bottom-right-radius: 10px;
+    /* Bottom right corner */
+    border-bottom-left-radius: 10px;
+    /* Bottom left corner */
     width: 100%;
     height: 100%;
 }
 
-#networkImage img{
+#networkImage img {
     margin-top: 15px;
     max-width: 95%;
     /* margin: 10px; */
@@ -504,11 +542,14 @@ button.active {
     border-top-style: 10px;
     margin-top: 70px;
     /* margin-bottom: 70px; */
-    padding: 15px; /* Adds padding inside the section */
-    align-items: center; /* Center horizontally within the container */
+    padding: 15px;
+    /* Adds padding inside the section */
+    align-items: center;
+    /* Center horizontally within the container */
     justify-content: center;
     max-width: 875px;
-    width: 90%; /* Set width relative to the parent container */
+    width: 90%;
+    /* Set width relative to the parent container */
     overflow: hidden;
 
 }
@@ -518,36 +559,99 @@ button.active {
     -webkit-font-smoothing: antialiased;
     margin-top: 40px;
     font-size: 20px;
-    color: var(--headings-color); /* Darker color for the heading */
+    color: var(--headings-color);
+    /* Darker color for the heading */
 }
 
 #citation p {
     font-family: 'Google Sans', sans-serif;
     font-size: 18px;
-    color: var(--text-color); /* Slightly lighter color for the text */
-    line-height: 1.6; /* Adjusts the line height for better readability */
+    color: var(--text-color);
+    /* Slightly lighter color for the text */
+    line-height: 1.6;
+    /* Adjusts the line height for better readability */
 }
 
 code {
     color: var(--text-color);
     font-size: 14px;
     font-weight: 400;
-    display: block; /* Make the code element a block-level element */
+    display: block;
+    /* Make the code element a block-level element */
     white-space: pre-wrap;
     word-wrap: break-word;
-    text-align: left; /* Align text to the left */
-    background-color: var(--buttons-color); /* Light background for the section */
+    text-align: left;
+    /* Align text to the left */
+    background-color: var(--buttons-color);
+    /* Light background for the section */
     /* border: 5px solid var(--dark-buttons-color); */
-    border-top-left-radius: 10px;     /* Top left corner */
-    border-top-right-radius: 10px;    /* Top right corner */
-    border-bottom-right-radius: 10px; /* Bottom right corner */
-    border-bottom-left-radius: 10px;  /* Bottom left corner */
+    border-top-left-radius: 10px;
+    /* Top left corner */
+    border-top-right-radius: 10px;
+    /* Top right corner */
+    border-bottom-right-radius: 10px;
+    /* Bottom right corner */
+    border-bottom-left-radius: 10px;
+    /* Bottom left corner */
     padding: 20px;
     padding-bottom: 30px;
     margin-bottom: 20px;
-    font-family: monospace; 
+    font-family: monospace;
     -moz-osx-font-smoothing: auto;
     -webkit-font-smoothing: auto;
 }
 
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: center;
+    /* Center text for all cells */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:first-child th {
+    border-top: 1px solid black;
+    /* Top border for the first header row */
+}
+
+tr th,
+tr td {
+    border-bottom: none;
+    /* Remove bottom borders for all cells */
+}
+
+tr:last-child td {
+    border-bottom: 1px solid black;
+    /* Bottom border for the last row */
+}
+
+tr:first-child th:last-child,
+tr:last-child td:last-child {
+    border-right: none;
+    /* Remove the right border of the last cell of the first and last row */
+}
+
+tr th:first-child,
+tr td:first-child {
+    text-align: left;
+    /* Align text to left for the first column */
+    border-left: none;
+    /* Remove the left border of the first cell of each row */
+}
+
+caption {
+    caption-side: top;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
+}

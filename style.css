@@ -72,7 +72,6 @@ body {
     margin: 0;
     padding-bottom: 10px;
     padding-top: 20px;
-    text-transform: uppercase;
     color: var(--headings-color);
 }
 

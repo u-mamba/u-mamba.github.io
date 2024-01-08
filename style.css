@@ -10,6 +10,9 @@
     --subheadings-color: #a57db2;
     --subheadings2-color: #ece3ee;
     --links-color: #ac97b0;
+    --table-bg-color: #f2f2f2;
+    --table-border-color: #333333;
+    --table-text-color: #333333;
 }
 
 :root.darkmode {
@@ -24,6 +27,9 @@
     --subheadings-color: #c1a8ca;
     --subheadings2-color: #d7b2e3;
     --links-color: #bca9c1;
+    --table-bg-color: #a396a8;
+    --table-border-color: #666666;
+    --table-text-color: #dddddd;
 }
 
 body {
@@ -534,15 +540,16 @@ th,
 td {
     padding: 8px;
     text-align: center;
+    color: var(--table-text-color);
     /* Center text for all cells */
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: var(--table-bg-color);;
 }
 
 tr:first-child th {
-    border-top: 1px solid black;
+    border-top: 1px solid var(--table-border-color);
     /* Top border for the first header row */
 }
 
@@ -553,7 +560,7 @@ tr td {
 }
 
 tr:last-child td {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--table-border-color);
     /* Bottom border for the last row */
 }
 

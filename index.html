@@ -164,88 +164,88 @@
                 <table>
                     <caption>Table 1. Dataset information.</caption>
                     <tr>
-                      <th>Dataset</th>
-                      <th>Dimension</th>
-                      <th>#Training Image</th>
-                      <th>#Testing Image</th>
-                      <th>#Targets</th>
+                        <th>Dataset</th>
+                        <th>Dimension</th>
+                        <th>#Training Image</th>
+                        <th>#Testing Image</th>
+                        <th>#Targets</th>
                     </tr>
                     <tr>
-                      <td>Abdomen CT</td>
-                      <td>3D</td>
-                      <td>50 (4794 slices)</td>
-                      <td>50 (10894 slices)</td>
-                      <td>13</td>
+                        <td>Abdomen CT</td>
+                        <td>3D</td>
+                        <td>50 (4794 slices)</td>
+                        <td>50 (10894 slices)</td>
+                        <td>13</td>
                     </tr>
                     <tr>
-                      <td>Abdomen MRI</td>
-                      <td>3D</td>
-                      <td>60 (5615 slices)</td>
-                      <td>50 (3357 slices)</td>
-                      <td>13</td>
+                        <td>Abdomen MRI</td>
+                        <td>3D</td>
+                        <td>60 (5615 slices)</td>
+                        <td>50 (3357 slices)</td>
+                        <td>13</td>
                     </tr>
                     <tr>
-                      <td>Endoscopy Images</td>
-                      <td>2D</td>
-                      <td>1800</td>
-                      <td>1200</td>
-                      <td>7</td>
+                        <td>Endoscopy Images</td>
+                        <td>2D</td>
+                        <td>1800</td>
+                        <td>1200</td>
+                        <td>7</td>
                     </tr>
                     <tr>
-                      <td>Microscopy Images</td>
-                      <td>2D</td>
-                      <td>1000</td>
-                      <td>101</td>
-                      <td>2</td>
+                        <td>Microscopy Images</td>
+                        <td>2D</td>
+                        <td>1000</td>
+                        <td>101</td>
+                        <td>2</td>
                     </tr>
-                  </table>
+                </table>
             </div>
             <div class="subsection" id="Table1">
                 <table>
                     <caption>Table 2. U-Mamba configurations for each dataset.</caption>
                     <tr>
-                      <th>Configurations</th>
-                      <th>Patch size</th>
-                      <th>Batch size</th>
-                      <th># Stages</th>
-                      <th># Pooling per axis</th>
+                        <th>Configurations</th>
+                        <th>Patch size</th>
+                        <th>Batch size</th>
+                        <th># Stages</th>
+                        <th># Pooling per axis</th>
                     </tr>
                     <tr>
-                      <td>Abdomen CT</td>
-                      <td>(40, 224, 192)</td>
-                      <td>2</td>
-                      <td>6</td>
-                      <td>(3, 3, 5)</td>
+                        <td>Abdomen CT</td>
+                        <td>(40, 224, 192)</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>(3, 3, 5)</td>
                     </tr>
                     <tr>
-                      <td>3D Abdomen MR</td>
-                      <td>(48, 160, 224)</td>
-                      <td>2</td>
-                      <td>6</td>
-                      <td>(3, 5, 5)</td>
+                        <td>3D Abdomen MR</td>
+                        <td>(48, 160, 224)</td>
+                        <td>2</td>
+                        <td>6</td>
+                        <td>(3, 5, 5)</td>
                     </tr>
                     <tr>
-                      <td>2D Abdomen MR</td>
-                      <td>(320, 320)</td>
-                      <td>30</td>
-                      <td>7</td>
-                      <td>(6, 6)</td>
+                        <td>2D Abdomen MR</td>
+                        <td>(320, 320)</td>
+                        <td>30</td>
+                        <td>7</td>
+                        <td>(6, 6)</td>
                     </tr>
                     <tr>
-                      <td>Endoscopy</td>
-                      <td>(384, 640)</td>
-                      <td>13</td>
-                      <td>7</td>
-                      <td>(6, 6)</td>
+                        <td>Endoscopy</td>
+                        <td>(384, 640)</td>
+                        <td>13</td>
+                        <td>7</td>
+                        <td>(6, 6)</td>
                     </tr>
                     <tr>
-                      <td>Microscopy</td>
-                      <td>(512, 512)</td>
-                      <td>12</td>
-                      <td>8</td>
-                      <td>(7, 7)</td>
+                        <td>Microscopy</td>
+                        <td>(512, 512)</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>(7, 7)</td>
                     </tr>
-                  </table>
+                </table>
             </div>
         </div>
 
@@ -271,6 +271,11 @@
             year={2024}
           }</code>
             <button id="copyButton">Copy</button>
+            <div id="thanks">
+                <p>
+                    This website template is borrowed from <a href="https://github.com/boundaryattention/boundaryattention.github.io/" target="_blank" rel="noopener">here</a>. Thank you!
+                </p>
+            </div>
         </div>
 
     </div>

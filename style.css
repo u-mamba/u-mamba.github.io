@@ -413,6 +413,15 @@ button.active {
     /* Darker color for the heading */
 }
 
+.subsection h4 {
+    font-family: 'Google Sans', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: var(--text-color);
+    /* Darker color for the heading */
+}
+
 .subsection p {
     color: var(--text-color);
     /* Slightly lighter color for the text */
@@ -583,4 +592,5 @@ caption {
     font-size: 1.5em;
     font-weight: bold;
     margin: 20px 0;
+    color: var(--table-text-color);
 }

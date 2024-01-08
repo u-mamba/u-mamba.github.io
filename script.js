@@ -66,11 +66,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     const originalSection = document.getElementById("navigation");
-    const clonedSection = document.getElementById("menu");
     const clonedContent = originalSection.cloneNode(true);
     
     clonedContent.style.display = "flex";
-    clonedSection.appendChild(clonedContent);
 
     // Citation Copy Button
     const copyButton = document.getElementById('copyButton');

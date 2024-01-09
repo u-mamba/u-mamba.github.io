@@ -421,7 +421,14 @@ button.active {
     color: var(--text-color);
     /* Darker color for the heading */
 }
-
+.subsection figcaption {
+    font-family: 'Google Sans', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: var(--text-color);
+    /* Darker color for the heading */
+}
 .subsection p {
     color: var(--text-color);
     /* Slightly lighter color for the text */
@@ -430,6 +437,15 @@ button.active {
     text-align: justify !important;
     width: 100%;
     margin-top: 0px;
+}
+.subsection ul {
+    list-style-type: disc; 
+}
+
+.subsection li {
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: justify !important;
 }
 
 .subsection a {

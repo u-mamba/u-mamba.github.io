@@ -46,9 +46,10 @@
             <div id="navigation-content">
                 <div id="navigation">
                     <span class="inline-heading-2"><a href=#header class="scroll-link">Return to Top</a></span>
-                    <span class="inline-heading"><a href=#Overview class="scroll-link">1. Overview</a></span>
+                    <span class="inline-heading"><a href=#Highlights class="scroll-link">1. Highlights</a></span>
                     <span class="inline-heading"><a href=#Network class="scroll-link">2. Network</a></span>
-                    <span class="inline-heading"><a href=#ExperimentsResults class="scroll-link">3. Experiments and Results</a></span>
+                    <span class="inline-heading"><a href=#ExperimentsResults class="scroll-link">3. Experiments and
+                            Results</a></span>
                     <p><a href=#DatasetOverview class="scroll-link">a. Dataset Overview</a></p>
                     <p><a href=#Results class="scroll-link">b. Results</a></p>
                     <span class="inline-heading"><a href=#citation class="scroll-link">4. BibTeX</a></span>
@@ -64,8 +65,7 @@
             <p class="subheading">Enhancing Long-range Dependency for Biomedical Image Segmentation</p>
             <p class="paper-links">
 
-                <a href="https://github.com/bowang-lab/U-Mamba"
-                    target="_blank" rel=noopener>
+                <a href="https://github.com/bowang-lab/U-Mamba" target="_blank" rel=noopener>
                     <button id="paperLinkButton">
                         <span class="icon">
                             <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false"
@@ -108,9 +108,9 @@
             </p>
 
             <p class="authors">
-                <span class="author" id="author1">Jun Ma<sup>1,2,3[0000−0002−9739−0855]</sup></span>,
+                <span class="author" id="author1">Jun Ma<sup>1,2,3</sup></span>,
                 <span class="author" id="author2">Feifei Li<sup>1</sup></span>,
-                <span class="author" id="author3">Bo Wang<sup>1,2,3,4,5[0000−0002−9620−3413]</sup></span>,
+                <span class="author" id="author3">Bo Wang<sup>1,2,3,4,5</sup></span>,
             </p>
             <p class="associations">
                 <span class="associations"><sup>1</sup>Peter Munk Cardiac Centre, University Health Network, Toronto,
@@ -124,35 +124,29 @@
                     Canada</span><br>
                 <span class="associations"><sup>5</sup>AI Hub, University Health Network, Toronto, Canada</span><br>
                 <br>
-                <span class="associations"><strong>bo.wang@uhnresearch.ca</strong></span>
+                <span class="associations"><strong>bowang@vectorinstitute.ai</strong></span>
             </p>
         </div> <!--Header-->
 
-        <div class="section" , id="Overview">
+        <div class="section" , id="Highlights">
 
-            <h2>Overview</h2>
+            <h2>Highlights</h2>
             <div class="subsection">
-                <p>
-                    Convolutional Neural Networks (CNNs) and Transformers
-                    have been the most popular architectures for medical image segmenta-
-                    tion, but both of them have limited ability to handle long-range de-
-                    pendencies because of inherent locality or computational complexity.
-                    Structured state space sequence models have emerged as general-purpose
-                    building blocks for various tasks. Here, we introduce U-Mamba, a general-
-                    purpose network for medical image segmentation. The core component
-                    is plug-and-play network blocks that combine the advantage of convo-
-                    lutional layers and selective structured state space models, which can
-                    simultaneously capture local features and aggregate global representa-
-                    tions. We conduct extensive experiments on four diverse tasks, includ-
-                    ing 3D abdominal organ segmentation in CT and MR images, cell seg-
-                    mentation in microscopy images, and instrument segmentation in en-
-                    doscopy images. U-Mamba outperforms state-of-the-art CNN-based and
-                    transformer-based medical image segmentation networks across all tasks.
-                    This opens new avenues for efficient long-range dependency modeling.
-                </p>
+                <ul>
+                    <li>We propose U-Mamba, A general purpose segmentation network for 2D and 3D biomedical images.</li>
+                    <li>U-Mamba combines the advantage of convolutional layers and selective structured state space
+                        models, which can simultaneously capture local features and aggregate long-range dependencies.
+                    </li>
+                    <li>Extensive experiments demonstrate U-Mamba achieves superior performance than both CNN- and
+                        Transformer-based networks on four diverse tasks, including the 3D abdominal organ segmentation
+                        in CT and MR images, instrument segmentation in endoscopy images, and cell segmentation in
+                        microscopy images.</li>
+                    <li>The results suggest that U-Mamba is a promising candidate for serving the next-generation
+                        biomedical image segmentation network backbone.</li>
+                </ul>
             </div> <!--subsection-->
 
-        </div> <!--Overview-->
+        </div> <!--Highlights-->
 
         <div class="section" , id="Network">
             <h2>Network</h2>
@@ -162,12 +156,10 @@
                     <img src="static/images/fig1-network.png" class="image" id="networkImage" alt="">
                 </div>
                 <p>
-                    Overview of the U-Mamba (Enc) architecture. a, U-Mamba building block
-                    contains two successive Residual blocks followed by a Mamba block to enhance the long-
-                    range dependency. b, The whole architecture is a typical encoder-decoder framework.
-                    Note: this figure is for illustration purposes. U-Mamba inherits the self-configuring
-                    feature from nnU-Net and the number of stages is automatically determined across
-                    datasets. The detailed network configurations are presented in Table
+                    Overview of the U-Mamba (Enc) architecture. a. U-Mamba building block contains two successive
+                    Residual blocks followed by a Mamba block to enhance long-range dependencies. b. The whole
+                    architecture of U-Mamba, which is a typical encoder-decoder framework with U-Mamba blocks in the
+                    encoder, Residual blocks in the decoder, together with skip connections.
                 </p>
             </div>
         </div>
@@ -178,7 +170,11 @@
                 <h2>Dataset Overview</h2>
                 <p>
                     Our results suggest that U-Mamba is a strong candidate for serving
-                    the next-generation medical image segmentation network.
+                    the next-generation medical image segmentation network.</p>
+                <p>
+                    We evaluate U-Mamba on four publicly available datasets, covering four modalities and various
+                    targets. U-Mamba inherits the self-configuring feature from nnU-Net, which can automatically
+                    generate networks for different datasets.
                 </p>
                 <div class="subsection" id="Table1">
                     <table>
@@ -220,7 +216,7 @@
                         </tr>
                     </table>
                 </div>
-                <div class="subsection" id="Table1">
+                <div class="subsection" id="Table2">
                     <table>
                         <caption>Table 2. U-Mamba configurations for each dataset.</caption>
                         <tr>
@@ -275,10 +271,32 @@
                     Our results suggest that U-Mamba is a strong candidate for serving
                     the next-generation medical image segmentation network.
                 </p>
-                <div class="subsection" id="Table1">
-                    <img src="static/images/fig2-3d-results.png" , class="image" alt="">
+                <div class="subsection" id="Figure1">
+                    <figure>
+                        <img src="static/images/fig2-3d-results.png" , class="image" alt="">
+                        <figcaption>Visualized segmentation examples of abdominal organ segmentation in CT (1st and 2nd
+                            rows) and MRI
+                            scans (3rd and 4th rows).</figcaption>
+                    </figure>
                 </div>
-                <h4>Placeholder Results</h4>
+                <!-- <h4>Visualized segmentation examples of abdominal organ segmentation in CT (1st and 2nd rows) and MRI
+                    scans (3rd and 4th rows).
+                </h4> -->
+                <p></p>
+                <div class="subsection" id="Figure2">
+                    <figure>
+                        <img src="static/images/fig3-2d-results.png" , class="image" alt="">
+                        <figcaption>Visualized segmentation examples of abdominal organ segmentation MRI scans (1st
+                            row), cell
+                            segmentation in microscopy images (2nd row), and instruments segmentation in endoscopy
+                            images (3rd
+                            row).</figcaption>
+                    </figure>
+                </div>
+                <!-- <h4>Visualized segmentation examples of abdominal organ segmentation MRI scans (1st row), cell
+                    segmentation in microscopy images (2nd row), and instruments segmentation in endoscopy images (3rd
+                    row).
+                </h4> -->
             </div>
         </div>
 

@@ -421,6 +421,7 @@ button.active {
     color: var(--text-color);
     /* Darker color for the heading */
 }
+
 .subsection figcaption {
     font-family: 'Google Sans', sans-serif;
     margin-top: 30px;
@@ -429,6 +430,7 @@ button.active {
     color: var(--text-color);
     /* Darker color for the heading */
 }
+
 .subsection p {
     color: var(--text-color);
     /* Slightly lighter color for the text */

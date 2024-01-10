@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="U-Mamba">
-    <meta name="description"
-        content="Enhancing long-range dependency biomedical image segmentation">
+    <meta name="description" content="Enhancing long-range dependency biomedical image segmentation">
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <!--Main Scripts-->
@@ -64,8 +63,6 @@
             <h1>U-Mamba</h1>
             <p class="subheading">Enhancing Long-range Dependency for Biomedical Image Segmentation</p>
             <p class="paper-links">
-
-
                 <a href="https://github.com/bowang-lab/U-Mamba" target="_blank" rel=noopener>
                     <button id="paperLinkButton">
                         <span class="icon">
@@ -138,7 +135,7 @@
                     <li>U-Mamba combines the advantage of convolutional layers and state space
                         models, which can simultaneously capture local features and aggregate long-range dependencies.
                     </li>
-                    <li>U-Mamba enjoys a self-configuring mechanism, allowing it to automatically adapt to various 
+                    <li>U-Mamba enjoys a self-configuring mechanism, allowing it to automatically adapt to various
                         datasets without manual intervention.</li>
                     <li>Extensive experiments demonstrate U-Mamba achieves superior performance than both CNN- and
                         Transformer-based networks on four diverse tasks, including the 3D abdominal organ segmentation
@@ -268,13 +265,24 @@
             <div class="subsection" id="Results">
                 <h2>Results</h2>
                 <p>
-                    Visualized results demonstrate that U-Mamba can handle complex targets with fewer segmentation outliers. 
+                    Visualized results demonstrate that U-Mamba can handle complex targets with fewer segmentation
+                    outliers.
                 </p>
                 <div class="video-grid">
                     <div><video src="static/videos/001-3D-CT.mp4" controls autoplay loop muted></video></div>
                     <div><video src="static/videos/002-3D-MR.mp4" controls autoplay loop muted></video></div>
-                    <div><video src="static/videos/003-17_7_frame263_UmambaEnc_h264.mp4" controls autoplay loop muted></video></div>
-                    <div><video src="static/videos/004-cell_00003-umambaseg_h264.mp4" controls autoplay loop muted></video></div>
+                    <div><video src="static/videos/003-17_7_frame263_UmambaEnc_h264.mp4" controls autoplay loop
+                            muted></video></div>
+                    <div><video src="static/videos/004-cell_00003-umambaseg_h264.mp4" controls autoplay loop
+                            muted></video></div>
+                </div>
+                <div class="subsection" id="Table3">
+                    <table>
+                        <caption><strong>Table 3.</strong> Results summary of 3D organ segmentation on abdomen CT and MRI
+                            datasets. U-Mamba_Bot: only use the U-Mmaba block in the bottleneck. UMamba_
+                            Enc: all encoder blocks are U-Mmaba blocks.</caption>
+                    </table>
+                    <img src="static/images/Table3.png" , class="image" alt="">
                 </div>
                 <div class="subsection" id="Figure1">
                     <figure>
@@ -284,10 +292,14 @@
                             scans (3rd and 4th rows).</figcaption>
                     </figure>
                 </div>
-                <!-- <h4>Visualized segmentation examples of abdominal organ segmentation in CT (1st and 2nd rows) and MRI
-                    scans (3rd and 4th rows).
-                </h4> -->
-
+                <div class="subsection" id="Table4">
+                    <table>
+                        <caption><strong>Table 4.</strong> Results summary of 2D segmentation tasks: organ segmentation in abdomen
+                            MRI scans, instruments segmentation in endoscopy images, and cell segmentation in
+                            microscopy images.</caption>
+                    </table>
+                    <img src="static/images/Table4.png" , class="image" alt="">
+                </div>
                 <div class="subsection" id="Figure2">
                     <figure>
                         <img src="static/images/fig3-2d-results.png" , class="image" alt="">
@@ -298,10 +310,6 @@
                             row).</figcaption>
                     </figure>
                 </div>
-                <!-- <h4>Visualized segmentation examples of abdominal organ segmentation MRI scans (1st row), cell
-                    segmentation in microscopy images (2nd row), and instruments segmentation in endoscopy images (3rd
-                    row).
-                </h4> -->
             </div>
         </div>
 

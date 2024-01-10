@@ -464,6 +464,31 @@ button.active {
     text-decoration: none;
 }
 
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.video-grid div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-grid div video {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+}
+
 .image {
     margin-top: 0;
     font-size: 20px;
